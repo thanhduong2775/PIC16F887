@@ -1,0 +1,95 @@
+
+ROM used:   3716/8192 (45%)
+            3717/8192 (45%) including unused fragments
+
+            1.0 Average locations per line
+            6.5 Average locations per statement
+
+RAM used:   29/368 (8%) at main() level
+            81/368 (22%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  337   218  38  Mach cam bien nhiet bao chay.c
+   51     0   0  Mach cam bien nhiet bao chay.h
+  758     0   0  C:\Program Files (x86)\PICC\Devices\16F887.h
+  456   100  17  C:\Program Files (x86)\PICC\Drivers\lcd.c
+ 2229   257  45  C:\Program Files (x86)\PICC\Drivers\math.h
+----- -----
+ 3831   575 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   1    1             @delay_ms1
+0      8   0    0             @const625
+ Inline         3   760  4.5  lcd_read_byte
+0     57   2    2   262  3.7  lcd_read_nibble
+0     56   2    1   399  2.4  lcd_send_nibble
+0    110   3    3   415  3.7  lcd_send_byte
+0     75   2    2   704  5.0  lcd_init
+0     18   0    4   208  6.3  lcd_gotoxy
+0     44   1    1   354  4.7  lcd_putc
+0     63   2   10             @FLT
+0     31   1    4             @SFTOI
+0     29   1    2             @ITOF
+0    117   3   13             @MULFF
+0    321   9   16             @ADDFF
+0    202   5   14             @DIVFF
+0     37   1    2             @SITOF
+ Inline        25   979 10.0  log
+0     80   2    5   194  4.5  read_adc_lap
+1    251   7    2  1297  5.8  MAIN
+0      9   0    0             @const831
+0     92   2    4             @PSTRINGC7_645
+0      9   0    0             @const833
+0      9   0    0             @const834
+0      9   0    0             @const835
+0      9   0    0             @const836
+0      9   0    0             @const837
+1     83   2    1   633  3.8  kiem_tra
+1    109   3    3   635  5.6  hien_thi_chay
+0     10   0    0             @const839
+0    101   3    5             @PSTRINGCN7_645
+0     21   1    3             @DIV88
+1     63   2    2             @PRINTF_U_645
+0     11   0    0             @const848
+1    226   6    4   612  3.8  ht_nhiet
+0      7   0    0             @const849
+ Inline         5             @FTOSD
+0     79   2   13             @DIV3232
+0    224   6   13             @PRINTF_L32D_645FPFPF
+0      8   0    0             @const858
+0      7   0    0             @const859
+1     44   1    7   377  5.8  tao_tre2
+0     38   1    7   313  5.3  tao_tre
+0    123   3    2   167  2.0  doc_cam_bien
+1    135   4    2  1844  4.4  quet_phim
+1    758  20   10   254  4.0  chuen_doi_nhiet_ntc
+ Inline         4             @DTOF
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              575
+    Comments                563
+    Volume (V)              17368
+    Difficulty (D)          81.9
+    Effort to implement (E) 1422684
+    Time to implement (T)   21 hours, 57 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   50
+    Maintainability (MI)    113
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  2043  1  
+00800-00FFF  1669  379  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

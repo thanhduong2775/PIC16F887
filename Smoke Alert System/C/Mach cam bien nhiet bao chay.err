@@ -1,0 +1,4 @@
+>>> Warning 202 "D:\Rac\Mach cam bien nhiet bao khoi - X2\C\Mach cam bien nhiet bao chay.h" Line 44(6,13): Variable never used:   tro_ntc
+      Memory usage:   ROM=45%      RAM=8% - 22%
+      0 Errors,  1 Warnings.
+Build Successful.

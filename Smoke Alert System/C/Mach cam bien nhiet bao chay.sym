@@ -1,0 +1,251 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-024 nhiet
+025.0   canh_bao
+025.1   bao_chay
+025.2   xu_ly_chay
+025.3   bao_coi
+025.4   dang_bao_coi
+025.5   canh_bao1
+025.6   bao_chay1
+025.7   xu_ly_chay1
+026-029 nhiet1
+02A.0   bao_coi1
+02A.1   dang_bao_coi1
+02A.2   np
+02B     cht
+02C-02D tro_ntc
+02E-031 r
+032-035 Thermister
+036-039 atan2.y
+036     lcd_init.i
+036     hien_thi_chay.xl
+036-039 ht_nhiet.n
+036     MAIN.@SCRATCH1
+036     @PSTRINGC7_645.@SCRATCH1
+037-038 tao_tre2.t
+037     @PRINTF_U_645.P1
+037     lcd_init.@SCRATCH1
+037     MAIN.@SCRATCH2
+037     @PSTRINGC7_645.@SCRATCH2
+037     hien_thi_chay.@SCRATCH1
+038     @PRINTF_U_645.P1
+038     @PSTRINGC7_645.@SCRATCH3
+038     hien_thi_chay.@SCRATCH2
+039     @DIV88.P1
+039-03A tao_tre2.i
+039     @PSTRINGC7_645.@SCRATCH4
+03A     @DIV88.P1
+03A     @PSTRINGCN7_645.P2
+03A-03D atan2.x
+03A-03D @PRINTF_L32D_645FPFPF.P1
+03A-03B tao_tre.t
+03B     tao_tre2.j
+03B     @PSTRINGCN7_645.@SCRATCH1
+03B     @DIV88.@SCRATCH1
+03C-03D tao_tre.i
+03C     @PSTRINGCN7_645.@SCRATCH2
+03C     tao_tre2.@SCRATCH1
+03D     @PSTRINGCN7_645.@SCRATCH3
+03D     tao_tre2.@SCRATCH2
+03E     tao_tre.j
+03E     @PRINTF_L32D_645FPFPF.P1
+03E-041 atan2.z
+03E     @PSTRINGCN7_645.@SCRATCH4
+03F     read_adc_lap.i
+03F     kiem_tra.@SCRATCH1
+03F     @PRINTF_L32D_645FPFPF.@SCRATCH1
+03F     tao_tre.@SCRATCH1
+03F     doc_cam_bien.@SCRATCH1
+03F     quet_phim.@SCRATCH1
+040-043 read_adc_lap.adc2
+040     @PRINTF_L32D_645FPFPF.@SCRATCH2
+040     tao_tre.@SCRATCH2
+040     doc_cam_bien.@SCRATCH2
+040     quet_phim.@SCRATCH2
+041-042 chuen_doi_nhiet_ntc.analog_value
+041     @PRINTF_L32D_645FPFPF.@SCRATCH3
+042.0   atan2.sign
+042     @PRINTF_L32D_645FPFPF.@SCRATCH4
+043-046 @DTOF.P1
+043     atan2.quad
+043-046 log.x
+043     @PRINTF_L32D_645FPFPF.@SCRATCH5
+043     chuen_doi_nhiet_ntc.@SCRATCH1
+044-045 @ITOF.P1
+044-047 @SFTOI.P2
+044     @PRINTF_L32D_645FPFPF.@SCRATCH6
+044     chuen_doi_nhiet_ntc.@SCRATCH2
+045     @PRINTF_L32D_645FPFPF.@SCRATCH7
+045     chuen_doi_nhiet_ntc.@SCRATCH3
+046     @PRINTF_L32D_645FPFPF.@SCRATCH8
+046     chuen_doi_nhiet_ntc.@SCRATCH4
+047-04A @DIV3232.P1
+047-04A @FTOSD.P2
+047-04A log.y
+047     lcd_putc.c
+047     chuen_doi_nhiet_ntc.@SCRATCH5
+048     @delay_ms1.P1
+048     lcd_gotoxy.x
+048     chuen_doi_nhiet_ntc.@SCRATCH6
+049     lcd_gotoxy.y
+049     chuen_doi_nhiet_ntc.@SCRATCH7
+04A     lcd_gotoxy.address
+04A     chuen_doi_nhiet_ntc.@SCRATCH8
+04B-04E log.res
+04B-04E @DIV3232.P1
+04B     lcd_gotoxy.@SCRATCH1
+04B     @FTOSD.@SCRATCH1
+04C     lcd_send_byte.address
+04D     lcd_send_byte.n
+04E     lcd_read_byte.low
+04E     lcd_send_byte.@SCRATCH1
+04F     lcd_send_nibble.n
+04F-052 log.r
+04F     lcd_read_byte.high
+04F     @DIV3232.@SCRATCH1
+050     lcd_read_nibble.n
+050     lcd_read_byte.@SCRATCH1
+050     @DIV3232.@SCRATCH2
+051     lcd_read_nibble.@SCRATCH1
+051     @DIV3232.@SCRATCH3
+052     @DIV3232.@SCRATCH4
+053-056 log.y2
+053     @DIV3232.@SCRATCH5
+057     log.n
+058-05B @MULFF.P1
+058-059 @SITOF.P2
+058-05B @FLT.P3
+058     log.@SCRATCH1
+059     log.@SCRATCH2
+05A     log.@SCRATCH3
+05B     log.@SCRATCH4
+05C-05F @DIVFF.P1
+05C-05F @FLT.P2
+05C-05F @ADDFF.P3
+05C-05F @MULFF.P4
+060-063 @DIVFF.P1
+060-063 @ADDFF.P2
+060     @FLT.@SCRATCH1
+060     @MULFF.@SCRATCH1
+061     @FLT.@SCRATCH2
+061     @MULFF.@SCRATCH2
+062     @MULFF.@SCRATCH3
+063     @MULFF.@SCRATCH4
+064     @MULFF.@SCRATCH5
+064     @ADDFF.@SCRATCH1
+064     @DIVFF.@SCRATCH1
+065     @ADDFF.@SCRATCH2
+065     @DIVFF.@SCRATCH2
+066     @ADDFF.@SCRATCH3
+066     @DIVFF.@SCRATCH3
+067     @ADDFF.@SCRATCH4
+067     @DIVFF.@SCRATCH4
+068     @ADDFF.@SCRATCH5
+068     @DIVFF.@SCRATCH5
+069     @ADDFF.@SCRATCH6
+069     @DIVFF.@SCRATCH6
+06A     @ADDFF.@SCRATCH7
+06B     @ADDFF.@SCRATCH8
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const831.call
+000015  @const833.call
+00001E  @const834.call
+000027  @const835.call
+000030  @const836.call
+000039  @const837.call
+000042  @const839.call
+00004C  @const848.call
+000057  @const849.call
+00005E  @const858.call
+000066  @const859.call
+00006D  @delay_ms1
+000081  lcd_send_nibble
+0000B9  lcd_read_nibble
+0000F2  lcd_send_byte
+0000FA  lcd_read_byte
+000160  lcd_init
+0001AB  lcd_gotoxy
+0001BD  lcd_putc
+0001E9  @PSTRINGC7_645
+000245  @ITOF
+000262  @ADDFF
+0003A3  @DIVFF
+00046D  @SFTOI
+00048C  read_adc_lap
+0004DC  @DIV3232
+00052B  @FLT
+00056A  @MULFF
+0005DF  @SITOF
+000604  doc_cam_bien
+00067F  @PSTRINGCN7_645
+0006E4  @PRINTF_L32D_645FPFPF
+00070B  @FTOSD
+0007C4  tao_tre
+0007EA  @DIV88
+000800  chuen_doi_nhiet_ntc
+000836  @DTOF
+000860  log
+000AF6  kiem_tra
+000B49  quet_phim
+000BD0  ht_nhiet
+000CB2  @PRINTF_U_645
+000CF1  tao_tre2
+000D1D  hien_thi_chay
+000D8A  @cinit1
+000D8A  MAIN
+000DAA  @cinit2
+
+Project Directory:
+    D:\Rac\Mach cam bien nhiet bao khoi - X2\C\
+
+Project Files:
+    Mach cam bien nhiet bao chay.c                          [30-Oct-23 15:57  CRC=D14AF110]
+    Mach cam bien nhiet bao chay.h                          [30-Oct-23 15:57  CRC=868E06A2]
+    C:\Program Files (x86)\PICC\Devices\16F887.h            [09-Aug-13 15:40  CRC=9FD133B5]
+    C:\Program Files (x86)\PICC\Drivers\lcd.c               [23-Aug-12 09:01  CRC=D28E8746]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+
+Source signature=7300D83F
+
+Units:
+    Mach cam bien nhiet bao chay (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Mach cam bien nhiet bao chay.xsym
+    Errors:      Mach cam bien nhiet bao chay.err
+    Ext Symbols: Mach cam bien nhiet bao chay.esym
+    INHX8:       Mach cam bien nhiet bao chay.hex
+    Symbols:     Mach cam bien nhiet bao chay.sym
+    List:        Mach cam bien nhiet bao chay.lst
+    Debug/COFF:  Mach cam bien nhiet bao chay.cof
+    Project:     Mach cam bien nhiet bao chay.ccspjt
+    Call Tree:   Mach cam bien nhiet bao chay.tre
+    Statistics:  Mach cam bien nhiet bao chay.STA
