@@ -1,0 +1,110 @@
+[PROJECT]
+Target=Dem san pham 2 LED 7 doan.hex
+Development_Mode=
+Processor_Text=PIC16F877A
+ToolSuite=CCS
+Processor=0x877A
+CCSVersion=5.011
+Compiler=PCM
+[E:\! Electronic\! All\! Dong ho\! PIC\Dong ho mo phong Timer PIC16F877A\C\Dong ho mo phong Timer PIC16F877A]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=Dem san pham 2 LED 7 doan.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=Dem san pham 2 LED 7 doan.c
+2=Dem san pham 2 LED 7 doan.h
+3=
+4=..\..\..\..\..\! PIC\Digital Clock\Digital Clock DS1307 LM335\C\Digital Clock DS1307 LM335.h
+5=Dong ho mo phong Timer PIC16F877A.h
+6=D:\!  Electronic Program\! PIC soft\PICC\devices\16F877A.h
+7=
+t1=1
+Count=3
+t2=1
+t3=1
+
+[ProjectLog]
+Days=5
+D1=18-10-2015
+D1_L=37
+D1_L1=[54404]Project Opened.
+D1_L2=[54411]Project Closed.
+D1_L3=[54430]Project Opened.
+D1_L4=[54503]Started Editing.
+D1_L5=[54513]Stopped Editing.
+TotalEdit=104
+TotalDebug=0
+D1_E=98
+D1_D=0
+D1_L6=[54527]Project Closed.
+D1_L7=[54537]Project Opened.
+D1_L8=[54550]Started Editing.
+D1_L9=[55157]Stopped Editing.
+D1_L10=[55157]Project Closed.
+D1_L11=[55317]Project Opened.
+D1_L12=[55344]Started Editing.
+D1_L13=[55368]Stopped Editing.
+D1_L14=[55368]Project Closed.
+D1_L15=[55400]Project Opened.
+D1_L16=[55435]Started Editing.
+D1_L17=[56305]Stopped Editing.
+D1_L18=[56305]Project Closed.
+D1_L19=[56323]Project Opened.
+D1_L20=[56329]Started Editing.
+D1_L21=[58754]Stopped Editing.
+D1_L22=[59702]Project Closed.
+D1_L23=[59702]Project Opened.
+D1_L24=[59713]Started Editing.
+D1_L25=[60129]Stopped Editing.
+D1_L26=[60179]Started Editing.
+D1_L27=[60680]Stopped Editing.
+D1_L28=[61721]Started Editing.
+D1_L29=[62288]Stopped Editing.
+D1_L30=[62670]Started Editing.
+D1_L31=[64069]Stopped Editing.
+D1_L32=[64069]Project Closed.
+D1_L33=[64221]Project Opened.
+D1_L34=[64242]Started Editing.
+D1_L35=[64651]Stopped Editing.
+D1_L36=[66174]Started Editing.
+D1_L37=[66500]Stopped Editing.
+D2=19-10-2015
+D2_E=3
+D2_D=0
+D2_L=1
+D2_L1=[802]Project Closed.
+D3=09-07-2016
+D3_L=5
+D3_L1=[42662]Project Opened.
+D3_L2=[42695]Started Editing.
+D3_L3=[43088]Stopped Editing.
+D3_L4=[54619]Started Editing.
+D3_L5=[54997]Stopped Editing.
+D4=10-07-2016
+D4_E=3
+D4_D=0
+D4_L=1
+D4_L1=[77829]Project Closed.
+D5=19-07-2016
+D5_L=2
+D5_L1=[1399]Project Opened.
+D5_L2=[1408]Project Closed.
+[Target Data]
+FileList=Dem san pham 2 LED 7 doan.c
+[Dem san pham 2 LED 7 doan.c]
+Type=4
+
+[defines]
+buildcount=31
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[Units]
+Count=1
+1=Dem san pham 2 LED 7 doan (main)

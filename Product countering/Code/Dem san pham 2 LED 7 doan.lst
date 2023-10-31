@@ -1,0 +1,605 @@
+CCS PCM C Compiler, Version 5.011, 42195               31-Oct-23 09:03
+
+               Filename:   D:\Rac\Mach dem san pham 2 so PIC - Len Xuong\C\Dem san pham 2 LED 7 doan.lst
+
+               ROM used:   508 words (6%)
+                           Largest free fragment is 2048
+               RAM used:   12 (3%) at main() level
+                           24 (7%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   0DE
+0003:  NOP
+.................... #include <Dem san pham 2 LED 7 doan.h> 
+.................... #include <16F877A.h> // dinh kem thu vien dinh nghia cua PIC 16F877A 
+.................... //////// Standard Header file for the PIC16F877A device //////////////// 
+.................... #device PIC16F877A 
+0004:  BCF    0A.0
+0005:  BCF    0A.1
+0006:  BCF    0A.2
+0007:  ADDWF  02,F
+0008:  RETLW  C0
+0009:  RETLW  F9
+000A:  RETLW  A4
+000B:  RETLW  B0
+000C:  RETLW  99
+000D:  RETLW  92
+000E:  RETLW  82
+000F:  RETLW  F8
+0010:  RETLW  80
+0011:  RETLW  90
+0012:  MOVF   27,W
+0013:  CLRF   78
+0014:  SUBWF  26,W
+0015:  BTFSC  03.0
+0016:  GOTO   01A
+0017:  MOVF   26,W
+0018:  MOVWF  77
+0019:  GOTO   026
+001A:  CLRF   77
+001B:  MOVLW  08
+001C:  MOVWF  28
+001D:  RLF    26,F
+001E:  RLF    77,F
+001F:  MOVF   27,W
+0020:  SUBWF  77,W
+0021:  BTFSC  03.0
+0022:  MOVWF  77
+0023:  RLF    78,F
+0024:  DECFSZ 28,F
+0025:  GOTO   01D
+0026:  RETURN
+0027:  MOVLW  8E
+0028:  MOVWF  77
+0029:  MOVF   27,W
+002A:  MOVWF  78
+002B:  MOVF   26,W
+002C:  MOVWF  79
+002D:  CLRF   7A
+002E:  MOVF   78,F
+002F:  BTFSS  03.2
+0030:  GOTO   03B
+0031:  MOVF   79,W
+0032:  MOVWF  78
+0033:  CLRF   79
+0034:  MOVLW  08
+0035:  SUBWF  77,F
+0036:  MOVF   78,F
+0037:  BTFSS  03.2
+0038:  GOTO   03B
+0039:  CLRF   77
+003A:  GOTO   043
+003B:  BCF    03.0
+003C:  BTFSC  78.7
+003D:  GOTO   042
+003E:  RLF    79,F
+003F:  RLF    78,F
+0040:  DECF   77,F
+0041:  GOTO   03B
+0042:  BCF    78.7
+0043:  BCF    0A.3
+0044:  BCF    0A.4
+0045:  GOTO   13A (RETURN)
+0046:  MOVF   26,W
+0047:  BTFSC  03.2
+0048:  GOTO   0B6
+0049:  MOVWF  2E
+004A:  MOVF   2A,W
+004B:  BTFSC  03.2
+004C:  GOTO   0B6
+004D:  ADDWF  2E,F
+004E:  BTFSC  03.0
+004F:  GOTO   057
+0050:  MOVLW  7F
+0051:  SUBWF  2E,F
+0052:  BTFSS  03.0
+0053:  GOTO   0B6
+0054:  BTFSC  03.2
+0055:  GOTO   0B6
+0056:  GOTO   05B
+0057:  MOVLW  81
+0058:  ADDWF  2E,F
+0059:  BTFSC  03.0
+005A:  GOTO   0B6
+005B:  MOVF   2E,W
+005C:  MOVWF  77
+005D:  CLRF   78
+005E:  CLRF   79
+005F:  CLRF   7A
+0060:  MOVF   27,W
+0061:  MOVWF  32
+0062:  BSF    32.7
+0063:  MOVF   28,W
+0064:  MOVWF  31
+0065:  MOVF   29,W
+0066:  MOVWF  30
+0067:  MOVLW  18
+0068:  MOVWF  2E
+0069:  CLRF   2F
+006A:  BTFSS  30.0
+006B:  GOTO   084
+006C:  MOVF   2D,W
+006D:  ADDWF  7A,F
+006E:  BTFSS  03.0
+006F:  GOTO   076
+0070:  INCF   79,F
+0071:  BTFSS  03.2
+0072:  GOTO   076
+0073:  INCF   78,F
+0074:  BTFSC  03.2
+0075:  BSF    2F.7
+0076:  MOVF   2C,W
+0077:  ADDWF  79,F
+0078:  BTFSS  03.0
+0079:  GOTO   07D
+007A:  INCF   78,F
+007B:  BTFSC  03.2
+007C:  BSF    2F.7
+007D:  MOVF   2B,W
+007E:  MOVWF  28
+007F:  BSF    28.7
+0080:  MOVF   28,W
+0081:  ADDWF  78,F
+0082:  BTFSC  03.0
+0083:  BSF    2F.7
+0084:  RLF    2F,F
+0085:  RRF    78,F
+0086:  RRF    79,F
+0087:  RRF    7A,F
+0088:  RRF    32,F
+0089:  RRF    31,F
+008A:  RRF    30,F
+008B:  BCF    03.0
+008C:  DECFSZ 2E,F
+008D:  GOTO   069
+008E:  MOVLW  01
+008F:  ADDWF  77,F
+0090:  BTFSC  03.0
+0091:  GOTO   0B6
+0092:  BTFSC  78.7
+0093:  GOTO   09B
+0094:  RLF    32,F
+0095:  RLF    7A,F
+0096:  RLF    79,F
+0097:  RLF    78,F
+0098:  DECF   77,F
+0099:  BTFSC  03.2
+009A:  GOTO   0B6
+009B:  BTFSS  32.7
+009C:  GOTO   0AC
+009D:  INCF   7A,F
+009E:  BTFSS  03.2
+009F:  GOTO   0AC
+00A0:  INCF   79,F
+00A1:  BTFSS  03.2
+00A2:  GOTO   0AC
+00A3:  INCF   78,F
+00A4:  BTFSS  03.2
+00A5:  GOTO   0AC
+00A6:  RRF    78,F
+00A7:  RRF    79,F
+00A8:  RRF    7A,F
+00A9:  INCF   77,F
+00AA:  BTFSC  03.2
+00AB:  GOTO   0B6
+00AC:  MOVF   27,W
+00AD:  MOVWF  2F
+00AE:  MOVF   2B,W
+00AF:  XORWF  2F,F
+00B0:  BTFSS  2F.7
+00B1:  GOTO   0B4
+00B2:  BSF    78.7
+00B3:  GOTO   0BA
+00B4:  BCF    78.7
+00B5:  GOTO   0BA
+00B6:  CLRF   77
+00B7:  CLRF   78
+00B8:  CLRF   79
+00B9:  CLRF   7A
+00BA:  BCF    0A.3
+00BB:  BCF    0A.4
+00BC:  GOTO   14B (RETURN)
+00BD:  MOVLW  8E
+00BE:  MOVWF  77
+00BF:  MOVF   25,W
+00C0:  SUBWF  77,F
+00C1:  MOVF   26,W
+00C2:  MOVWF  79
+00C3:  MOVF   27,W
+00C4:  MOVWF  78
+00C5:  BSF    79.7
+00C6:  MOVF   77,F
+00C7:  BTFSC  03.2
+00C8:  GOTO   0D4
+00C9:  BCF    03.0
+00CA:  MOVF   79,F
+00CB:  BTFSS  03.2
+00CC:  GOTO   0D0
+00CD:  MOVF   78,F
+00CE:  BTFSC  03.2
+00CF:  GOTO   0D4
+00D0:  RRF    79,F
+00D1:  RRF    78,F
+00D2:  DECFSZ 77,F
+00D3:  GOTO   0C9
+00D4:  BTFSS  26.7
+00D5:  GOTO   0DB
+00D6:  COMF   78,F
+00D7:  COMF   79,F
+00D8:  INCF   78,F
+00D9:  BTFSC  03.2
+00DA:  INCF   79,F
+00DB:  BCF    0A.3
+00DC:  BCF    0A.4
+00DD:  GOTO   154 (RETURN)
+....................  
+.................... #list 
+....................  
+.................... #device ADC=8 // dat ADC o che do 8 bit  
+.................... #FUSES HS // su dung thach anh ngoai lam bo giao dông 
+.................... #use delay(clock=4000000) // su dung thach anh 20M 
+.................... int8 so_dem; // khai bao bien gia tri so dem duoc  
+.................... int8 ty_le_cb; // ty le cam bien dan  
+.................... int1 muc=0; // muc xac dinh cua cam bien 
+.................... int1 co_vat=0; // bao co vat can hay khong 
+.................... int8 cham=0xff; // dau cham hien thi tren LED 7 doan bao có vat hay khong  
+.................... const char ma7doan[]={0xC0,0xF9,0xA4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90}; //khai bao ma 7 doan tich cuc muc thap ( ki tu 8 bit ) 
+.................... //                       0    1    2    3    4    5    6    7    8    9 
+....................  
+....................  
+....................  
+.................... void main() // chuong trinh chinh  
+00DE:  MOVF   03,W
+00DF:  ANDLW  1F
+00E0:  MOVWF  03
+00E1:  BCF    22.0
+00E2:  BCF    22.1
+00E3:  MOVLW  FF
+00E4:  MOVWF  23
+00E5:  MOVWF  24
+00E6:  BSF    03.5
+00E7:  BSF    1F.0
+00E8:  BSF    1F.1
+00E9:  BSF    1F.2
+00EA:  BCF    1F.3
+00EB:  MOVLW  07
+00EC:  MOVWF  1C
+00ED:  BCF    03.7
+.................... { 
+....................    so_dem=read_eeprom(0); // doc so dem cu duoc luu trong eeprom tai dia chi 0            
+00EE:  BCF    03.5
+00EF:  BSF    03.6
+00F0:  CLRF   0D
+00F1:  BSF    03.5
+00F2:  BCF    0C.7
+00F3:  BSF    0C.0
+00F4:  BCF    03.5
+00F5:  MOVF   0C,W
+00F6:  BCF    03.6
+00F7:  MOVWF  20
+....................    setup_adc_ports(AN0); // thiêt lap kenh ADC AN0 lam ngo vao ADC dung de doc tin hieu tu mat thu hong ngoai 
+00F8:  BSF    03.5
+00F9:  BCF    1F.0
+00FA:  BSF    1F.1
+00FB:  BSF    1F.2
+00FC:  BSF    1F.3
+....................    setup_adc(ADC_CLOCK_INTERNAL); // thiet lap xung cap cho ADC là xung noi                                                                 
+00FD:  BCF    1F.6
+00FE:  BCF    03.5
+00FF:  BSF    1F.6
+0100:  BSF    1F.7
+0101:  BSF    03.5
+0102:  BCF    1F.7
+0103:  BCF    03.5
+0104:  BSF    1F.0
+....................    set_adc_channel(0); // dat kenh  cho ADC là kenh 0 (AN0)                                                            
+0105:  MOVLW  00
+0106:  MOVWF  78
+0107:  MOVF   1F,W
+0108:  ANDLW  C7
+0109:  IORWF  78,W
+010A:  MOVWF  1F
+....................    while(TRUE)  // vong lap vo han 
+....................    {                   
+....................       output_b(ma7doan[so_dem/10%10]&cham); // xuât ma LED 7 doan hang chuc ra port B                    
+010B:  MOVF   20,W
+010C:  MOVWF  26
+010D:  MOVLW  0A
+010E:  MOVWF  27
+010F:  CALL   012
+0110:  MOVF   78,W
+0111:  MOVWF  26
+0112:  MOVLW  0A
+0113:  MOVWF  27
+0114:  CALL   012
+0115:  MOVF   77,W
+0116:  CALL   004
+0117:  ANDWF  23,W
+0118:  MOVWF  25
+0119:  BSF    03.5
+011A:  CLRF   06
+011B:  BCF    03.5
+011C:  MOVF   25,W
+011D:  MOVWF  06
+....................       output_c(ma7doan[so_dem%10]); // xuât ma LED 7 doan hang don vi ra port C      
+011E:  MOVF   20,W
+011F:  MOVWF  26
+0120:  MOVLW  0A
+0121:  MOVWF  27
+0122:  CALL   012
+0123:  MOVF   77,W
+0124:  CALL   004
+0125:  MOVWF  25
+0126:  MOVLW  00
+0127:  MOVWF  24
+0128:  BSF    03.5
+0129:  CLRF   07
+012A:  BCF    03.5
+012B:  MOVF   25,W
+012C:  MOVWF  07
+....................       delay_us(25); // tao thoi gian tre us                                          
+012D:  MOVLW  07
+012E:  MOVWF  77
+012F:  DECFSZ 77,F
+0130:  GOTO   12F
+0131:  GOTO   132
+0132:  NOP
+....................       ty_le_cb=read_adc()*0.39; // doc ty lê % tín hieu tu mat thu hông ngoai (0-100); gia tri adc max=255; 0,39=100/255;    
+0133:  BSF    1F.2
+0134:  BTFSC  1F.2
+0135:  GOTO   134
+0136:  CLRF   27
+0137:  MOVF   1E,W
+0138:  MOVWF  26
+0139:  GOTO   027
+013A:  MOVF   7A,W
+013B:  MOVWF  29
+013C:  MOVF   79,W
+013D:  MOVWF  28
+013E:  MOVF   78,W
+013F:  MOVWF  27
+0140:  MOVF   77,W
+0141:  MOVWF  26
+0142:  MOVLW  14
+0143:  MOVWF  2D
+0144:  MOVLW  AE
+0145:  MOVWF  2C
+0146:  MOVLW  47
+0147:  MOVWF  2B
+0148:  MOVLW  7D
+0149:  MOVWF  2A
+014A:  GOTO   046
+014B:  MOVF   7A,W
+014C:  MOVWF  28
+014D:  MOVF   79,W
+014E:  MOVWF  27
+014F:  MOVF   78,W
+0150:  MOVWF  26
+0151:  MOVF   77,W
+0152:  MOVWF  25
+0153:  GOTO   0BD
+0154:  MOVF   78,W
+0155:  MOVWF  21
+....................       if(ty_le_cb>70) // khi ty le dan cua mat thu lon hon nguong (70) thì do là muc 1, tuc khong co vat can             
+0156:  MOVF   21,W
+0157:  SUBLW  46
+0158:  BTFSC  03.0
+0159:  GOTO   15D
+....................       {                              
+....................          muc=1; // xac dinh muc 1; 
+015A:  BSF    22.0
+....................          cham=0xff; // tat LED bao co vat can 
+015B:  MOVLW  FF
+015C:  MOVWF  23
+....................       }                         
+....................       if(ty_le_cb<30) // khi ty le dan cua mat thu nho hon nguong (30) thì do là muc 0, tuc co vat can  
+015D:  MOVF   21,W
+015E:  SUBLW  1D
+015F:  BTFSS  03.0
+0160:  GOTO   165
+....................       { 
+....................          muc=0; // xac dinh muc 0;  
+0161:  BCF    22.0
+....................          cham=0x7f; // bat led bao co vat can 
+0162:  MOVLW  7F
+0163:  MOVWF  23
+....................          co_vat=1; // bao co vat can  
+0164:  BSF    22.1
+....................       } 
+....................       if(muc==1&&co_vat==1) // neu muc = 1 và co vat can // tuc vat can da di qua cam bien 
+0165:  BTFSS  22.0
+0166:  GOTO   187
+0167:  BTFSS  22.1
+0168:  GOTO   187
+....................       {                      
+....................          co_vat=0; // bao khong co vat           
+0169:  BCF    22.1
+....................          so_dem++; // tang so dem                                      
+016A:  INCF   20,F
+....................          if(so_dem>99) // gioi han so dem den 99 
+016B:  MOVF   20,W
+016C:  SUBLW  63
+016D:  BTFSS  03.0
+....................          { 
+....................             so_dem=0; // dat lai so dem = 0 khi so dem > 99 
+016E:  CLRF   20
+....................          } 
+....................          write_eeprom(0, so_dem); // ghi so dem vao EEPROM tai dia chi 0   
+016F:  MOVF   0B,W
+0170:  MOVWF  77
+0171:  BCF    0B.7
+0172:  BSF    03.6
+0173:  CLRF   0D
+0174:  BCF    03.6
+0175:  MOVF   20,W
+0176:  BSF    03.6
+0177:  MOVWF  0C
+0178:  BSF    03.5
+0179:  BCF    0C.7
+017A:  BSF    0C.2
+017B:  MOVLW  55
+017C:  MOVWF  0D
+017D:  MOVLW  AA
+017E:  MOVWF  0D
+017F:  BSF    0C.1
+0180:  BTFSC  0C.1
+0181:  GOTO   180
+0182:  BCF    0C.2
+0183:  MOVF   77,W
+0184:  BCF    03.5
+0185:  BCF    03.6
+0186:  IORWF  0B,F
+....................       }  
+....................       //----------------------------------------  
+....................       if(input(pin_d2)==0) // khi nút reset so dem duoc nhan 
+0187:  BSF    03.5
+0188:  BSF    08.2
+0189:  BCF    03.5
+018A:  BTFSC  08.2
+018B:  GOTO   1AA
+....................       {                    
+....................          while(input(pin_d2)==0); // tao vong lap chowf nut duoc nha   
+018C:  BSF    03.5
+018D:  BSF    08.2
+018E:  BCF    03.5
+018F:  BTFSS  08.2
+0190:  GOTO   18C
+....................          so_dem=0; // dat so dem ve 0; 
+0191:  CLRF   20
+....................          write_eeprom(0, so_dem); // ghi so dem vao EEPROM tai dia chi 0   
+0192:  MOVF   0B,W
+0193:  MOVWF  77
+0194:  BCF    0B.7
+0195:  BSF    03.6
+0196:  CLRF   0D
+0197:  BCF    03.6
+0198:  MOVF   20,W
+0199:  BSF    03.6
+019A:  MOVWF  0C
+019B:  BSF    03.5
+019C:  BCF    0C.7
+019D:  BSF    0C.2
+019E:  MOVLW  55
+019F:  MOVWF  0D
+01A0:  MOVLW  AA
+01A1:  MOVWF  0D
+01A2:  BSF    0C.1
+01A3:  BTFSC  0C.1
+01A4:  GOTO   1A3
+01A5:  BCF    0C.2
+01A6:  MOVF   77,W
+01A7:  BCF    03.5
+01A8:  BCF    03.6
+01A9:  IORWF  0B,F
+....................       }                         
+....................       if(input(pin_d0)==0) // khi nut giam duoc nhan  
+01AA:  BSF    03.5
+01AB:  BSF    08.0
+01AC:  BCF    03.5
+01AD:  BTFSC  08.0
+01AE:  GOTO   1D3
+....................       {                       
+....................          while(input(pin_d0)==0); // tao vong lap chowf nut duoc nha   
+01AF:  BSF    03.5
+01B0:  BSF    08.0
+01B1:  BCF    03.5
+01B2:  BTFSS  08.0
+01B3:  GOTO   1AF
+....................          so_dem--; // giam gia tri so dem 
+01B4:  DECF   20,F
+....................          if(so_dem>99) // neu so dem > 99 
+01B5:  MOVF   20,W
+01B6:  SUBLW  63
+01B7:  BTFSC  03.0
+01B8:  GOTO   1BB
+....................          { 
+....................             so_dem=99; // nap lai so dem = 99 
+01B9:  MOVLW  63
+01BA:  MOVWF  20
+....................          } 
+....................          write_eeprom(0, so_dem); // ghi so dem vao EEPROM tai dia chi 0   
+01BB:  MOVF   0B,W
+01BC:  MOVWF  77
+01BD:  BCF    0B.7
+01BE:  BSF    03.6
+01BF:  CLRF   0D
+01C0:  BCF    03.6
+01C1:  MOVF   20,W
+01C2:  BSF    03.6
+01C3:  MOVWF  0C
+01C4:  BSF    03.5
+01C5:  BCF    0C.7
+01C6:  BSF    0C.2
+01C7:  MOVLW  55
+01C8:  MOVWF  0D
+01C9:  MOVLW  AA
+01CA:  MOVWF  0D
+01CB:  BSF    0C.1
+01CC:  BTFSC  0C.1
+01CD:  GOTO   1CC
+01CE:  BCF    0C.2
+01CF:  MOVF   77,W
+01D0:  BCF    03.5
+01D1:  BCF    03.6
+01D2:  IORWF  0B,F
+....................       }  
+....................       if(input(pin_d1)==0) 
+01D3:  BSF    03.5
+01D4:  BSF    08.1
+01D5:  BCF    03.5
+01D6:  BTFSC  08.1
+01D7:  GOTO   1FA
+....................       {                         
+....................          while(input(pin_d1)==0); // tao vong lap chowf nut duoc nha   
+01D8:  BSF    03.5
+01D9:  BSF    08.1
+01DA:  BCF    03.5
+01DB:  BTFSS  08.1
+01DC:  GOTO   1D8
+....................          so_dem++; // tang gia tri so dem 
+01DD:  INCF   20,F
+....................          if(so_dem>99) // neu so dem > 99                              
+01DE:  MOVF   20,W
+01DF:  SUBLW  63
+01E0:  BTFSS  03.0
+....................          { 
+....................             so_dem=0; // nap lai so dem = 0 
+01E1:  CLRF   20
+....................          } 
+....................          write_eeprom(0, so_dem); // ghi so dem vao EEPROM tai dia chi 0   
+01E2:  MOVF   0B,W
+01E3:  MOVWF  77
+01E4:  BCF    0B.7
+01E5:  BSF    03.6
+01E6:  CLRF   0D
+01E7:  BCF    03.6
+01E8:  MOVF   20,W
+01E9:  BSF    03.6
+01EA:  MOVWF  0C
+01EB:  BSF    03.5
+01EC:  BCF    0C.7
+01ED:  BSF    0C.2
+01EE:  MOVLW  55
+01EF:  MOVWF  0D
+01F0:  MOVLW  AA
+01F1:  MOVWF  0D
+01F2:  BSF    0C.1
+01F3:  BTFSC  0C.1
+01F4:  GOTO   1F3
+01F5:  BCF    0C.2
+01F6:  MOVF   77,W
+01F7:  BCF    03.5
+01F8:  BCF    03.6
+01F9:  IORWF  0B,F
+....................       } 
+01FA:  GOTO   10B
+....................    }          
+.................... } 
+01FB:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT
